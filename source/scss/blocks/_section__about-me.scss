@@ -1,0 +1,99 @@
+.about-me {
+    position: relative;
+    overflow: hidden;
+}
+
+    .about-me__box {
+        position: relative;
+        z-index: 10;
+
+        padding-top: 195px;
+        padding-bottom: 238px;
+
+        @media (max-width: 1199px) {
+            padding-top: 219px;
+            padding-bottom: 229px;
+        }
+
+        @media (max-width: 1023px) {
+            padding-top: 408px;
+            padding-bottom: 0;
+        }
+    }
+
+    .about-me__head {
+        @include figure-reset;
+
+        max-width: 810px;
+
+        font-weight: 900;
+        font-size: 80px;
+
+        @media (max-width: 1199px) {
+            max-width: 550px;
+
+            font-size: 54px;
+        }
+
+        @media (max-width: 1023px) {
+            font-size: 27px;
+        }
+    }
+
+    .about-me__profession {
+        display: block;
+
+        margin-top: 23px;
+
+        font-size: 25px;
+        font-weight: 400;
+        color: $color-grey;
+
+        @media (max-width: 1199px) {
+            margin-top: 27px;
+        }
+
+        @media (max-width: 1023px) {
+            margin-top: 9px;
+            text-align: center;
+            line-height: 1.5;
+            font-size: 16px;
+        }
+    }
+
+    .about-me__button {
+        max-width: 600px;
+
+        padding: 20px 72px;
+        margin-top: 47px;
+
+        font-size: 18px;
+
+        @media (max-width: 1199px) {
+            padding: 24px 96px;
+        }
+
+        @media (max-width: 1023px) {
+            @include button-bg_orange;
+
+            margin-top: 24px;
+        }
+    }
+
+    .about-me__photo {
+        position: absolute;
+
+        bottom: 0;
+        right: -65px;
+
+        filter: drop-shadow(10px -10px 10px rgba(0, 0, 0, .2));
+
+        @media (max-width: 1199px) {
+            right: 40px;
+        }
+
+        @media (max-width: 1023px) {
+            top: 55px;
+            right: 20px;
+        }
+    }

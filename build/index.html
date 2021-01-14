@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+    <script src="js/main.js" defer=""></script>
+    <script src="js/slider.js" defer=""></script>
+    <script src="js/modal.js" defer=""></script>
+</head>
+<body class="js-body">
+    <header>
+        <div class="header-main container">
+            <nav class="header-main__menu menu">
+                <button class="menu__button menu-button js-menu-button" type="button" aria-label="Открыть меню"></button>
+
+                <ul class="header-main__menu-list menu__list header-main__menu-list_hidden js-menu-list">
+                    <li class="header-main__menu-item">
+                        <a href="#my-skill">Услуги</a>
+                    </li>
+
+                    <li class="header-main__menu-item">
+                        <a href="#examples">Портфолио</a>
+                    </li>
+
+                    <li class="header-main__menu-item">
+                        <a href="#price">Стоимость</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <a class="header-main__telephon" href="tel:+74999955555">+7 (499) 995-55-55</a>
+
+            <button class="header-main__button button button_pink-border js-modal__open-button" type="button">Заказать звонок</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="about-me">
+            <!-- <ul class="fly-letter">
+                <li class="fly-letter__container about-me__fly-letter-container_1">
+                    <span class="fly-letter__elem">&#123;&nbsp;&#125;</span>
+                </li>
+                <li class="fly-letter__container about-me__fly-letter-container_2">
+                    <span class="fly-letter__elem">&#35;</span>
+                </li>
+                <li class="fly-letter__container about-me__fly-letter-container_3">
+                    <span class="fly-letter__elem">&lt;div&gt;</span>
+                </li>
+                <li class="fly-letter__container about-me__fly-letter-container_4">
+                    <span class="fly-letter__elem">&lt;div&gt;</span>
+                </li>
+                <li class="fly-letter__container about-me__fly-letter-container_5">
+                    <span class="fly-letter__elem">&lt;&#47;&gt;</span>
+                </li>
+            </ul> -->
+            <ul class="fly-letter">
+                <li class="fly-letter__container about-me__fly-letter-container_1">
+                    <span class="fly-letter__elem fly-letter__elem_1"></span>
+                </li>
+                <li class="fly-letter__container about-me__fly-letter-container_2">
+                    <span class="fly-letter__elem fly-letter__elem_2"></span>
+                </li>
+                <li class="fly-letter__container about-me__fly-letter-container_3">
+                    <span class="fly-letter__elem fly-letter__elem_3"></span>
+                </li>
+                <li class="fly-letter__container about-me__fly-letter-container_4">
+                    <span class="fly-letter__elem fly-letter__elem_4"></span>
+                </li>
+                <li class="fly-letter__container about-me__fly-letter-container_5">
+                    <span class="fly-letter__elem fly-letter__elem_5"></span>
+                </li>
+            </ul>
+  
+            <div class="about-me__box container">
+                <h1 class="about-me__head">Виталий Ковешников 
+                    <span class="about-me__profession">Frontend-разработчик и веб-верстальщик</span>
+                </h1>
+
+                <button class="about-me__button button button_orange" type="button">Узнать больше</button>
+
+                <picture>
+                    <source media="(max-width: 1023px)" type="image/png" srcset="img/man-small.png">
+                    <img class="about-me__photo" src="img/man.png" alt="Фотография разработчика сайта">
+                </picture>
+            </div>
+        </section>
+
+        <section id="my-skill" class="my-skill">
+            <div class="my-skill__box container">
+                <h2 class="my-skill__head">Что я делаю</h2>
+
+                <ul class="my-skill__list skill-list">
+                    <li class="my-skill__list-item my-skill__list-item_icon1 skill-list__item">
+                        <p>Верстка лендинг-страниц и сайтов любой сложности</p>
+                    </li>
+                    <li class="my-skill__list-item my-skill__list-item_icon2 skill-list__item">
+                        <p>Адаптивная верстка под все браузеры и устройства</p>
+                    </li>
+                    <li class="my-skill__list-item my-skill__list-item_icon3 skill-list__item">
+                        <p>Frontend-разработка и программрование</p>
+                    </li>
+                    <li class="my-skill__list-item my-skill__list-item_icon4 skill-list__item">
+                        <p>Исправление и доработка существующей верстки</p>
+                    </li>
+                </ul>
+
+                <a href="#price" class="my-skill__link button_orange">Узнать стоимость</a>
+            </div>
+        </section>
+
+        <section id="examples" class="examples">
+            <div class="examples__box container">
+                <h2 class="examples__head">Примеры моих работ</h2>
+
+                <div class="examples-slider slider js-slider" role="region" aria-label="Галерея" tabindex="0">
+                    <button id="previous" class="examples-slider__control_left slider__control button button_arrow js-slider__button_previous" type="button" aria-label="previous"></button>
+                    <button id="next" class="examples-slider__control_right slider__control button button_arrow js-slider__button_next" type="button" aria-label="Переход к следующему слайду"></button>
+
+                    <ul class="examples-slider__list slider__list js-slider__list">
+                        <li class="examples-slider__list-item slider-list__item js-slider__item">
+                            <figure class="slider__figure">
+                                <picture>
+                                    <source media="(max-width: 1023px)" type="image/webp" srcset="https://via.placeholder.com/280x250.webp/00FF00/000000?text=280x250+webP+1x 1x, https://via.placeholder.com/560x500.webp/00FF00/000000?text=560x500+webP+2x 2x">
+                
+                                    <source media="(max-width: 1199px)" type="image/webp" srcset="https://via.placeholder.com/455x360.webP/00FF00/000000?text=455x360+webP+1x 1x, https://via.placeholder.com/910x720.webp/00FF00/000000?text=910x720+webP+2x 2x">
+                
+                                    <source type="image/webp" srcset="https://via.placeholder.com/370x290.webp/00FF00/000000?text=370x290+webP+1x 1x, https://via.placeholder.com/740x580.webp/00FF00/000000?text=740x580+webP+2x 2x">                                    
+                                   
+                                    <source media="(max-width: 1023px)" srcset="https://via.placeholder.com/280x250.jpg/00FF00/000000?text=280x250+JPG+1x 1x, https://via.placeholder.com/560x500.jpg/00FF00/000000?text=560x500+JPG+2x 2x">
+                
+                                    <source media="(max-width: 1199px)" type="image/webp" srcset="https://via.placeholder.com/455x360.jpg/00FF00/000000?text=455x360+JPG+1x 1x, https://via.placeholder.com/910x720.jpg/00FF00/000000?text=910x720+JPG+2x 2x">
+                
+                                    <img src="https://via.placeholder.com/370x290.jpg/00FF00/000000?text=370x290+JPG+1x" srcset="https://via.placeholder.com/740x580.jpg/00FF00/000000?text=740x580+JPG+2x 2x" alt="Фотография примера моей работы">
+                                   
+                                    <!-- <noscript>
+                                        <img src="https://via.placeholder.com/370x290.jpg/00FF00/000000?text=370x290+JPG+1x" srcset="https://via.placeholder.com/740x580.jpg/00FF00/000000?text=740x580+JPG+2x 2x" alt="Фотография примера моей работы">
+                                    </noscript> -->
+                                </picture>
+
+                                <figcaption class="examples-slider__figcaption slider__figcaption">Сайт психолога Веры Антоновой</figcaption>
+                            </figure>
+                        </li>
+
+                        <li class="examples-slider__list-item slider-list__item js-slider__item">
+                            <figure class="slider__figure">
+                                <picture>
+                                    <source media="(max-width: 1023px)" type="image/webp" srcset="https://via.placeholder.com/280x250.webp/00FF00/000000?text=280x250+webP+1x 1x, https://via.placeholder.com/560x500.webp/00FF00/000000?text=560x500+webP+2x 2x">
+                
+                                    <source media="(max-width: 1199px)" type="image/webp" srcset="https://via.placeholder.com/455x360.webP/00FF00/000000?text=455x360+webP+1x 1x, https://via.placeholder.com/910x720.webp/00FF00/000000?text=910x720+webP+2x 2x">
+                
+                                    <source type="image/webp" srcset="https://via.placeholder.com/370x290.webp/00FF00/000000?text=370x290+webP+1x 1x, https://via.placeholder.com/740x580.webp/00FF00/000000?text=740x580+webP+2x 2x">                                    
+                                   
+                                    <source media="(max-width: 1023px)" srcset="https://via.placeholder.com/280x250.jpg/00FF00/000000?text=280x250+JPG+1x 1x, https://via.placeholder.com/560x500.jpg/00FF00/000000?text=560x500+JPG+2x 2x">
+                
+                                    <source media="(max-width: 1199px)" type="image/webp" srcset="https://via.placeholder.com/455x360.jpg/00FF00/000000?text=455x360+JPG+1x 1x, https://via.placeholder.com/910x720.jpg/00FF00/000000?text=910x720+JPG+2x 2x">
+                
+                                    <img src="https://via.placeholder.com/370x290.jpg/00FF00/000000?text=370x290+JPG+1x" srcset="https://via.placeholder.com/740x580.jpg/00FF00/000000?text=740x580+JPG+2x 2x" alt="Фотография примера моей работы">
+                                    
+                                    <!-- <noscript>
+                                        <img src="https://via.placeholder.com/370x290.jpg/00FF00/000000?text=370x290+JPG+1x" srcset="https://via.placeholder.com/740x580.jpg/00FF00/000000?text=740x580+JPG+2x 2x" alt="Фотография примера моей работы">
+                                    </noscript> -->
+                                </picture>
+
+                                <figcaption class="examples-slider__figcaption slider__figcaption">Сайт магазина детской одежды</figcaption>
+                            </figure>
+                        </li>
+
+                        <li class="examples-slider__list-item slider-list__item js-slider__item">
+                            <figure class="slider__figure">
+                                <picture>
+                                    <source media="(max-width: 1023px)" type="image/webp" srcset="https://via.placeholder.com/280x250.webp/00FF00/000000?text=280x250+webP+1x 1x, https://via.placeholder.com/560x500.webp/00FF00/000000?text=560x500+webP+2x 2x">
+                
+                                    <source media="(max-width: 1199px)" type="image/webp" srcset="https://via.placeholder.com/455x360.webP/00FF00/000000?text=455x360+webP+1x 1x, https://via.placeholder.com/910x720.webp/00FF00/000000?text=910x720+webP+2x 2x">
+                
+                                    <source type="image/webp" srcset="https://via.placeholder.com/370x290.webp/00FF00/000000?text=370x290+webP+1x 1x, https://via.placeholder.com/740x580.webp/00FF00/000000?text=740x580+webP+2x 2x">                                    
+                                   
+                                    <source media="(max-width: 1023px)" srcset="https://via.placeholder.com/280x250.jpg/00FF00/000000?text=280x250+JPG+1x 1x, https://via.placeholder.com/560x500.jpg/00FF00/000000?text=560x500+JPG+2x 2x">
+                
+                                    <source media="(max-width: 1199px)" type="image/webp" srcset="https://via.placeholder.com/455x360.jpg/00FF00/000000?text=455x360+JPG+1x 1x, https://via.placeholder.com/910x720.jpg/00FF00/000000?text=910x720+JPG+2x 2x">
+                
+                                    <img src="https://via.placeholder.com/370x290.jpg/00FF00/000000?text=370x290+JPG+1x" srcset="https://via.placeholder.com/740x580.jpg/00FF00/000000?text=740x580+JPG+2x 2x" alt="Фотография примера моей работы">
+                                    
+                                    <!-- <noscript>
+                                        <img src="https://via.placeholder.com/370x290.jpg/00FF00/000000?text=370x290+JPG+1x" srcset="https://via.placeholder.com/740x580.jpg/00FF00/000000?text=740x580+JPG+2x 2x" alt="Фотография примера моей работы">
+                                    </noscript> -->
+                                </picture>
+
+                                <figcaption class="examples-slider__figcaption slider__figcaption">Сайт магазина &#171;Рыболов&#187;</figcaption>
+                            </figure>   
+                        </li>
+
+                        <li class="examples-slider__list-item slider-list__item js-slider__item">
+                            <figure class="slider__figure">
+                                <picture>
+                                    <source media="(max-width: 1023px)" type="image/webp" srcset="https://via.placeholder.com/280x250.webp/00FF00/000000?text=280x250+webP+1x 1x, https://via.placeholder.com/560x500.webp/00FF00/000000?text=560x500+webP+2x 2x">
+                
+                                    <source media="(max-width: 1199px)" type="image/webp" srcset="https://via.placeholder.com/455x360.webP/00FF00/000000?text=455x360+webP+1x 1x, https://via.placeholder.com/910x720.webp/00FF00/000000?text=910x720+webP+2x 2x">
+                
+                                    <source type="image/webp" srcset="https://via.placeholder.com/370x290.webp/00FF00/000000?text=370x290+webP+1x 1x, https://via.placeholder.com/740x580.webp/00FF00/000000?text=740x580+webP+2x 2x">                                    
+                                   
+                                    <source media="(max-width: 1023px)" srcset="https://via.placeholder.com/280x250.jpg/00FF00/000000?text=280x250+JPG+1x 1x, https://via.placeholder.com/560x500.jpg/00FF00/000000?text=560x500+JPG+2x 2x">
+                
+                                    <source media="(max-width: 1199px)" type="image/webp" srcset="https://via.placeholder.com/455x360.jpg/00FF00/000000?text=455x360+JPG+1x 1x, https://via.placeholder.com/910x720.jpg/00FF00/000000?text=910x720+JPG+2x 2x">
+                
+                                    <img src="https://via.placeholder.com/370x290.jpg/00FF00/000000?text=370x290+JPG+1x" srcset="https://via.placeholder.com/740x580.jpg/00FF00/000000?text=740x580+JPG+2x 2x" alt="Фотография примера моей работы">
+                                
+                                    <!-- <noscript>
+                                        <img src="https://via.placeholder.com/370x290.jpg/00FF00/000000?text=370x290+JPG+1x" srcset="https://via.placeholder.com/740x580.jpg/00FF00/000000?text=740x580+JPG+2x 2x" alt="Фотография примера моей работы">
+                                    </noscript> -->
+                                </picture>
+
+                                <figcaption class="examples-slider__figcaption slider__figcaption">Сайт магазина &#171;№4&#187;</figcaption>
+                            </figure>   
+                        </li>
+
+                        <li class="examples-slider__list-item slider-list__item js-slider__item">
+                            <figure class="slider__figure">
+                                <picture>
+                                    <source media="(max-width: 1023px)" type="image/webp" srcset="https://via.placeholder.com/280x250.webp/00FF00/000000?text=280x250+webP+1x 1x, https://via.placeholder.com/560x500.webp/00FF00/000000?text=560x500+webP+2x 2x">
+                
+                                    <source media="(max-width: 1199px)" type="image/webp" srcset="https://via.placeholder.com/455x360.webP/00FF00/000000?text=455x360+webP+1x 1x, https://via.placeholder.com/910x720.webp/00FF00/000000?text=910x720+webP+2x 2x">
+                
+                                    <source type="image/webp" srcset="https://via.placeholder.com/370x290.webp/00FF00/000000?text=370x290+webP+1x 1x, https://via.placeholder.com/740x580.webp/00FF00/000000?text=740x580+webP+2x 2x">                                    
+                                   
+                                    <source media="(max-width: 1023px)" srcset="https://via.placeholder.com/280x250.jpg/00FF00/000000?text=280x250+JPG+1x 1x, https://via.placeholder.com/560x500.jpg/00FF00/000000?text=560x500+JPG+2x 2x">
+                
+                                    <source media="(max-width: 1199px)" type="image/webp" srcset="https://via.placeholder.com/455x360.jpg/00FF00/000000?text=455x360+JPG+1x 1x, https://via.placeholder.com/910x720.jpg/00FF00/000000?text=910x720+JPG+2x 2x">
+                
+                                    <img src="https://via.placeholder.com/370x290.jpg/00FF00/000000?text=370x290+JPG+1x" srcset="https://via.placeholder.com/740x580.jpg/00FF00/000000?text=740x580+JPG+2x 2x" alt="Фотография примера моей работы">
+                                
+                                    <!-- <noscript>
+                                        <img src="https://via.placeholder.com/370x290.jpg/00FF00/000000?text=370x290+JPG+1x" srcset="https://via.placeholder.com/740x580.jpg/00FF00/000000?text=740x580+JPG+2x 2x" alt="Фотография примера моей работы">
+                                    </noscript> -->
+                                </picture>
+
+                                <figcaption class="examples-slider__figcaption slider__figcaption">Сайт магазина &#171;№5&#187;</figcaption>
+                            </figure>   
+                        </li>
+                    </ul>
+
+                    <div class="examples-slider__navigate slider__navigate-box">
+                        <button class="examples-slider__navigate-item slider__navigate-item js-examples-slider__navigate-item" type="button" value="second slide" aria-label="Второй слайд"></button>
+                        <button class="examples-slider__navigate-item slider__navigate-item js-examples-slider__navigate-item" type="button" value="4 slide" aria-label="Четвертый слайд"></button>
+                        <button class="examples-slider__navigate-item slider__navigate-item js-examples-slider__navigate-item" type="button" value="third slide" aria-label="Третий слайд"></button>
+                        <button class="examples-slider__navigate-item slider__navigate-item js-examples-slider__navigate-item" type="button" value="first slide" aria-label="Первый слайд"></button>
+                        <button class="examples-slider__navigate-item slider__navigate-item js-examples-slider__navigate-item" type="button" value="5 slide" aria-label="Пятый слайд"></button>
+                    </div>
+                </div>
+
+                <button class="examples__button button button_orange js-modal__open-button" type="button">Заказать проект</button>
+            </div>
+        </section>
+
+        <section id="price" class="price">
+            <ul class="fly-letter">
+                <li class="fly-letter__container-price price__fly-letter-container_1"></li>
+                <li class="fly-letter__container-price price__fly-letter-container_2"></li>
+                <li class="fly-letter__container-price price__fly-letter-container_3"></li>
+                <li class="fly-letter__container-price price__fly-letter-container_4"></li>
+                <li class="fly-letter__container-price price__fly-letter-container_5"></li>
+            </ul>
+
+            <div class="container price__container">
+                <h2 class="visually-hidden">Цены на проекты</h2>
+
+                <p class="price__main-p">Адаптивная верстка под все устройства и браузеры от 1000 рублей всего за 4 часа.*
+                    <small class="price__description">* Срок и стоимость могут отличаться от заявленных и рассчитываются индивидуально, в зависимости от сложности задач.</small>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__main footer-main container menu">
+            <ul class="footer-main__menu menu__list">
+                <li class="footer-main__menu-item">
+                    <a href="#my-skill">Услуги</a>
+                </li>
+                <li class="footer-main__menu-item">
+                    <a href="#examples">Портфолио</a>
+                </li>
+                <li class="footer-main__menu-item">
+                    <a href="#price">Стоимость</a>
+                </li>
+            </ul>
+
+            <address class="footer-main__contacts contacts">
+                <a class="footer-main__telephon contacts__item" href="tel:+74999955555">+7 (499) 995-55-55</a>
+                <a class="footer-main__mail contacts__item" href="mailto:info@agency.ru">info@agency.ru</a>
+            </address>
+
+            <div class="footer-main__other-contacts">
+                <button class="footer-main__button button button_pink-border js-modal__open-button" type="button">Заказать звонок</button>
+
+                <ul class="social-nets">
+                    <li class="social-nets__item">
+                        <a href="#" class="social-nets__link social-nets__link-vk" aria-label="Вконтакте разработчика"></a>
+                    </li>
+
+                    <li class="social-nets__item">
+                        <a href="#" class="social-nets__link social-nets__link-fb" aria-label="Фейсбук разработчика"></a>
+                    </li>
+
+                    <li class="social-nets__item">
+                        <a href="#" class="social-nets__link social-nets__link-twit" aria-label="Твиттер разработчика"></a>
+                    </li>
+
+                    <li class="social-nets__item">
+                        <a href="#" class="social-nets__link social-nets__link-inst" aria-label="Инстаграм разработчика"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="footer__copy-rights footer-copy-rights">© Виталий Ковешников, 2020</p>
+    </footer>
+
+    
+    <div class="modal-overlay modal_closed js-modal__overlay" id="modal-overlay">
+        <div class="modal modal_closed js-modal" role="dialog" aria-modal="false">
+            <div class="modal__head">
+                <h2 class="modal-head">Обратная связь</h2>
+                <button class="modal__close-button js-modal__close-button" type="button" aria-label="Закрыть"></button>
+            </div>
+            <div class="modal-guts">
+                <form class="modal-form js-modal-form">                    
+                    <label class="visually-hidden" for="userName">* Ваше имя</label>
+                    <input id="userName" class="modal-form__item" name="userName" type="text" placeholder="*Ваше имя" required="">
+                    
+                    <label class="visually-hidden" for="userMail">* Ваша электронная почта</label>
+                    <input id="userMail" class="modal-form__item" name="userMail" type="email" placeholder="*Ваш e-mail" required="">                    
+
+                    <label class="visually-hidden" for="userTel">* Ваш номер телефона</label>
+                    <input id="userTel" class="modal-form__item" name="userTel" type="tel" placeholder="*Ваш телефон" required="">
+                    
+
+                    <label class="visually-hidden" for="userComment">Комментарий</label>
+                    <textarea id="userComment" class="modal-form__item modal-form__textaria" name="comment" placeholder="Ваш комментарий" cols="50" rows="10" maxlength="1000"></textarea>   
+                
+                    <button class="modal-form__button button_pink-border button" type="submit">Отправить запрос</button>
+                </form>
+
+                <p class="modal__message js-modal__message">Ваш запрос отправлен</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

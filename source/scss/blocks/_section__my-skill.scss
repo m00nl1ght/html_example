@@ -1,0 +1,176 @@
+.my-skill {
+    background-color: $color-white;
+
+    @media (max-width: 1023px) {
+        padding-top: 180px;
+        margin-top: -180px;
+    }
+}
+
+    .my-skill__box {
+        @include section-flex;
+
+        padding-top: 92px;
+        padding-bottom: 102px;
+
+        @media (max-width: 1023px) {
+            padding-top: 46px;
+            padding-bottom: 51px;
+        }
+    }
+
+    .my-skill__head {
+        margin: 0;
+        margin-bottom: 70px;
+
+        font-size: 54px;
+
+        
+        @media (max-width: 1199px) {
+            margin-left: -30px;
+        }
+
+        @media (max-width: 1023px) {
+            margin: 0;
+            margin-bottom: 20px;
+            font-size: 30px;
+        }
+        
+    }
+
+    .my-skill__list {
+        @include list-reset;
+
+        padding-top: 25px;
+        margin-bottom: 73px;
+
+        line-height: 1.4;
+        font-size: 20px;
+        color: $color-grey;
+
+        
+        @media (max-width: 1199px) {
+            flex-wrap: wrap;
+            margin-bottom: 16px;
+        }
+
+        @media (max-width: 1023px) {
+            margin-bottom: 0;
+        }
+    }
+
+    .my-skill__list-item {
+        width: 25%;
+        padding-top: 72px;
+
+        &_icon1 {
+            padding-right: 28px;
+
+            @include icon-my-skill(url("../img/icon1.png"), no-repeat, 86px);
+
+            @media (max-width: 1023px) {
+                padding-top: 54px;
+                background-image: url("../img/icon1-small.png");
+            }
+        }
+
+        &_icon2 {
+            padding-left: 22px;
+
+            @include icon-my-skill(url("../img/icon2.png"), no-repeat, 120px);
+
+            @media (max-width: 1023px) {
+                background-image: url("../img/icon2-small.png");
+            }
+        }
+
+        &_icon3 {
+            padding-left: 57px;
+
+            @include icon-my-skill(url("../img/icon3.png"), no-repeat, 130px);
+
+            @media (max-width: 1023px) {
+                background-image: url("../img/icon3-small.png");
+            }
+        }
+
+        &_icon4 {
+            padding-left: 46px;
+
+            @include icon-my-skill(url("../img/icon4.png"), no-repeat, 132px);
+            
+            @media (max-width: 1023px) {
+                background-image: url("../img/icon4-small.png");
+            }
+        }
+
+        @media (max-width: 1199px) {
+            width: 472px;
+            margin: 0;
+
+            padding: 72px 70px 60px 145px;
+
+            background-position-x: 235px;
+
+            &:nth-child(even) {
+                padding-left: 50px;
+                padding-right: 145px;
+
+                background-position-x: 150px;
+            }
+        }
+
+        @media (max-width: 1023px) {
+            width: 100%;
+
+            padding: 57px 25px 33px 25px;
+            
+            line-height: 1.5;
+            font-size: 16px;
+
+            background-position-x: center;
+
+            &:nth-child(even) {
+                padding: 57px 25px 33px 25px;
+
+                background-position-x: center;
+            }
+
+            &:first-child {
+                padding-top: 54px;
+            }
+        }
+    }
+
+    .my-skill__link {
+        padding: 22px 60px;
+
+        font-size: 18px;
+
+        @media (max-width: 1199px) {
+            padding: 25px 85px;
+        }
+
+        @media (max-width: 1023px) {
+            @include button-bg_orange;
+
+            padding: 20px;
+            margin-top: 6px;
+
+            text-align: center;
+        }
+    }
+
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    width: 100%;
+}
+
+    .skill-list__item {
+        @include section-flex;
+
+        text-align: center;
+    }

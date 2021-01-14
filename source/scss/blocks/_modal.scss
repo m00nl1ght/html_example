@@ -1,0 +1,129 @@
+.modal {   
+    position: fixed;
+    width: 600px;
+    max-width: 100%;
+    height: 100%;
+    max-height: 580px;
+    top: 50%;
+    left: 50%;
+    z-index: 100;
+
+    transform: translate(-50%, -50%);
+    background-color: $color-main-bg;
+    opacity: 1;
+    transition: opacity 2s;
+}
+
+    .modal__head {
+        display: flex;
+
+        align-items: center;
+        justify-content: space-between;
+
+        padding: 15px 20px;
+        color: $color-white;
+        background: $bg-gradient;
+        
+    }
+
+    .modal-head {
+        margin: 0;
+        font-size: 28px;
+    }
+
+    .modal__close-button {
+
+        width: 50px;
+        height: 50px;
+
+        border: none;
+        border-radius: 16px;
+
+        background: url(../img/close-button.png) center no-repeat;
+
+    }
+
+    .modal-form {
+        display: flex;
+        flex-direction: column;
+
+        padding: 0;
+        border: none;
+    }
+
+        .modal-form__item {
+            width: 100%;
+
+            margin-bottom: 15px;
+            padding: 7px 15px;
+
+            font-size: 16px;
+        }
+
+        .modal-form__textaria {
+            min-width: 70px;
+        }
+
+.modal-form__button {
+    margin-top: 15px;
+    padding: 10px 15px;
+
+    font-size: 16px;
+    font-weight: bold;
+}
+.modal__message {
+    margin: 0;
+    padding: 10px;
+
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.modal__message_success {
+    background-color: $color-success-bg;
+}
+
+.modal-guts {
+    /* расположение над модальным окном */
+    position: absolute;
+
+    left: 0;
+    width: 100%;
+    height: 80%;
+  
+    /* отступы при необходимости */
+    padding: 20px;
+  
+    /* прокрутка */
+    overflow: auto; 
+  }
+
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition: opacity 2s;
+    z-index: 99;
+    
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+//   .modal_closed {
+//       display: none;
+//   }
+
+.modal_closed {
+    height: 0;
+    width: 0;
+    overflow: hidden;
+    opacity: 0;
+
+    transition: height 0s 2s, width 0s 2s, opacity 2s;
+}
+
+.modal_stop-scroll {
+    overflow: hidden;
+}

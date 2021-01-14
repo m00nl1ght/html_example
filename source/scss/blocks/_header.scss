@@ -1,0 +1,125 @@
+.header-main {
+    display: flex;
+    align-items: center;
+
+    padding-top: 27px;
+    padding-bottom: 25px;
+
+    @media (max-width: 1023px) {
+        padding-top: 25px;
+        padding-bottom: 27px;
+    }
+}
+
+.header-main__menu-list {
+    @media (max-width: 1199px) {
+
+        opacity: 1;
+transform: scaleY(1);
+transition: .5s ease-in-out;
+    }
+}
+.header-main .header-main__menu-list {
+        @media (max-width: 1199px) {
+            position: absolute;
+
+            flex-direction: column;
+            z-index: 15;
+        }
+    }
+
+    .header-main__menu-list_hidden {
+        @media (max-width: 1199px) {
+            // height: 0px;
+            // width: 0px;
+            // overflow: hidden;
+            opacity: 0;
+            transform: scaleY(0);
+            transform-origin: 0 0;
+            transition: .5s ease-in-out;
+        }
+    }
+
+    .header-main__menu-item {
+        margin-right: 33px;
+        border-bottom: solid 1px $color-main-bg;
+
+        font-size: 16px;
+
+        &:hover {
+            border-bottom: 1px solid $color-pink;
+            color: $color-pink;
+        }
+
+        @media (max-width: 1199px) {
+            padding: 10px 20px;
+            
+            border-bottom: solid 1px $color-white;
+            
+            color: $color-white;
+
+            background-color: $color-grey;
+
+            &:first-child {
+                margin-top: 10px;
+            }
+        }
+    }
+
+
+
+    .header-main__telephon {
+        margin-left: auto;
+        vertical-align: middle;
+
+        font-size: 25px;
+        font-weight: bold;
+
+        @media (max-width: 1023px) {
+            font-size: 18px;
+        }
+    }
+
+    .header-main__button {
+    padding: 14px 39px;
+        margin-left: 29px;
+
+        font-size: 16px;
+
+        @media (max-width: 1023px) {
+            padding: 14px;
+            margin-left: 33px;
+
+            border: none;
+
+            font-size: 0px;
+            background: url("../img/call-button-small.png") no-repeat;
+        }
+    }
+
+.menu__button {
+    display: none;
+
+    width: 46px;
+    height: 34px;
+
+    background: url(../img/menu-button.png);
+
+    @media (max-width: 1199px) {
+        display: block;
+    }
+
+    @media (max-width: 1023px) {
+        width: 26px;
+        height: 20px;
+
+        background: url(../img/menu-button-small.png);
+    }
+}
+
+.menu__list {
+    @include list-reset;
+
+    display: flex;
+    flex-direction: row;
+}

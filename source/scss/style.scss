@@ -1,0 +1,22 @@
+@import "normalize";
+@import "global";
+@import "fonts";
+@import "mixins";
+@import "variables";
+@import "visually-hidden";
+
+@import "blocks/container";
+
+@import "blocks/buttons";
+@import "blocks/header";
+
+@import "blocks/section__about-me";
+@import "blocks/section__my-skill";
+@import "blocks/section__examples";
+@import "blocks/section__price";
+
+@import "blocks/footer";
+@import "blocks/fly-element";
+@import "blocks/slider";
+@import "blocks/modal";
+

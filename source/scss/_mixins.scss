@@ -1,0 +1,46 @@
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin figure-reset {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin btn-style($border, $color, $bg-color) {
+  border: $border;
+  color: $color;
+  background-color: $bg-color;
+}
+
+@mixin icon-my-skill($bg-img, $bg-repeat, $bg-pos) {
+  background-image: $bg-img;
+  background-repeat: $bg-repeat;    
+  background-position-x: $bg-pos;
+}
+
+@mixin section-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@mixin button-bg_orange{
+  width: 100%;
+  padding: 18px 20px;
+
+  font-size: 16px;
+}
+
+@mixin fly-letter-contayner {
+  display: inline-block;
+  position: absolute;
+}
+
+@mixin start-animate-position {
+  top: 0;
+  left: 0; 
+  transform: rotate(0);
+}

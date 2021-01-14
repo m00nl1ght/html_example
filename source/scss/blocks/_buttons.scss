@@ -1,0 +1,25 @@
+.button {
+    cursor: pointer; 
+}
+
+    .button_pink-border {
+        @include btn-style(solid 1px $color-pink, $color-pink, $color-white);
+    }
+
+    .button_orange {
+        @include btn-style(none, $color-white, $color-orange);
+    }
+
+    .button_arrow {
+        padding: 30px;
+        border: none;
+        border-radius: 30px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        background: url("../img/arrow.png") no-repeat center;
+    }
+
+.menu-button {
+    position: relative;
+    padding: 0;  
+    border: none;
+}
